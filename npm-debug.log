@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/drwizzard/.node/bin/node',
+1 verbose cli   '/Users/drwizzard/.node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'tern-node-mongoose' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'tern-node-mongoose', null ]
+5 verbose cache add name=undefined spec="tern-node-mongoose" args=["tern-node-mongoose",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'tern-node-mongoose',
+6 verbose parsed url   path: 'tern-node-mongoose',
+6 verbose parsed url   href: 'tern-node-mongoose' }
+7 silly lockFile c9b3abfb-tern-node-mongoose tern-node-mongoose
+8 verbose lock tern-node-mongoose /Users/drwizzard/.npm/c9b3abfb-tern-node-mongoose.lock
+9 silly lockFile c9b3abfb-tern-node-mongoose tern-node-mongoose
+10 silly lockFile c9b3abfb-tern-node-mongoose tern-node-mongoose
+11 verbose addNamed [ 'tern-node-mongoose', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 7a5c29f6-tern-node-mongoose tern-node-mongoose@
+14 verbose lock tern-node-mongoose@ /Users/drwizzard/.npm/7a5c29f6-tern-node-mongoose.lock
+15 silly addNameRange { name: 'tern-node-mongoose', range: '*', hasData: false }
+16 verbose request where is /tern-node-mongoose
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 4124d877bbe7e919
+19 verbose url raw /tern-node-mongoose
+20 verbose url resolving [ 'https://registry.npmjs.org/', './tern-node-mongoose' ]
+21 verbose url resolved https://registry.npmjs.org/tern-node-mongoose
+22 verbose request where is https://registry.npmjs.org/tern-node-mongoose
+23 info trying registry request attempt 1 at 01:03:09
+24 http GET https://registry.npmjs.org/tern-node-mongoose
+25 http 404 https://registry.npmjs.org/tern-node-mongoose
+26 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '51',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Mon, 11 May 2015 08:03:09 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-lax1421-LAX',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1431331389.182669,VS0,VE80' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '51',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Mon, 11 May 2015 08:03:09 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-lax1421-LAX',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1431331389.182669,VS0,VE80' } ]
+28 silly lockFile 7a5c29f6-tern-node-mongoose tern-node-mongoose@
+29 silly lockFile 7a5c29f6-tern-node-mongoose tern-node-mongoose@
+30 error 404 404 Not Found: tern-node-mongoose
+30 error 404
+30 error 404 'tern-node-mongoose' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 14.1.0
+32 error command "/Users/drwizzard/.node/bin/node" "/Users/drwizzard/.node/bin/npm" "install" "-g" "tern-node-mongoose"
+33 error cwd /Users/drwizzard/Documents/gitz/codefellows/js/hw/5-single-resource-rest-api
+34 error node -v v0.10.35
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]
