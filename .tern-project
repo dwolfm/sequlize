@@ -1,4 +1,7 @@
 {
+"libs": [
+	"sequelize"
+],
 "plugins": {
     "node": {},
 	 "node-express": {}

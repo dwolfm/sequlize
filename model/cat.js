@@ -13,4 +13,6 @@ var catSchema = mongoose.Schema({
 	isEvil: Boolean
 });
 
-module.exports mongoose.model('User', catSchema);
+catSchema.path('name').required(true, "ouch: you cats have to have names yaknow");
+
+module.exports = mongoose.model('Cat', catSchema);
