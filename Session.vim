@@ -2,9 +2,9 @@ let SessionLoad = 1
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
-inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
-inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
 inoremap <Nul> 
+inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
+inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
 inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
 inoremap <silent> <Plug>NERDCommenterInsert  <BS>:call NERDComment('i', "insert")
 inoremap <silent> <Plug>snipMateShow =snipMate#ShowAvailableSnips()
@@ -133,6 +133,7 @@ set undodir=~/.vim/undoHist
 set undofile
 set wildmenu
 set wildmode=list:longest
+set window=69
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -141,14 +142,15 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 server.js
+badd +11 server.js
 badd +1 Gruntfile.js
 badd +1 lib/catRoutes.js
 badd +1 model/cat.js
 badd +1 test/\*
 badd +1 Procfile
 badd +1 package.json
-badd +0 model/dog.js
+badd +5 model/dog.js
+badd +7 lib/dogRoutes.js
 argglobal
 silent! argdel *
 argadd server.js
@@ -271,12 +273,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 10 - ((9 * winheight(0) + 32) / 65)
+let s:l = 7 - ((6 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
-normal! 026|
+7
+normal! 045|
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
